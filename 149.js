@@ -16,4 +16,4 @@ const num = n => Math.pow(100, n)
 // #4) Useing your function from #3, put in the paramter 10000. What is the result?
 // Research for yourself why you get this result
 
-num(10000); //Infinity
+num(10000); //Infinity, because max positive number
