@@ -4,9 +4,9 @@ import Clarifai from 'clarifai';
 import Navigation from './components/Navigation/Navigation';
 
 //You must add your own API key here from Clarifai.
-const app = new Clarifai.App({
-  apiKey: 'YOUR_API_HERE'
-});
+// const app = new Clarifai.App({
+//   apiKey: 'YOUR_API_HERE'
+// });
 
 const particlesOptions = {
   particles: {
