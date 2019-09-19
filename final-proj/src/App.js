@@ -27,7 +27,18 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      input: '',
+      imageUrl: '',
+      box: {},
+      route: 'signin',
       isSignedIn: false,
+      user: {
+        id: '',
+        name: '',
+        email: '',
+        entries: 0,
+        joined: ''
+      }
     }
   }
 
@@ -72,7 +83,7 @@ class App extends Component {
   }
 
   render() {
-    const { isSignedIn } = this.state;
+    const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
         <Particles className='particles' params={particlesOptions} />
@@ -82,7 +93,7 @@ class App extends Component {
           onInputChange={this.onInputChange}
           onButtonSubmit={this.onButtonSubmit}
         />
-        <FaceRecognition />
+        <FaceRecognition box={box} imageUrl={imageUrl} />
       </div>
     );
   }
